@@ -679,7 +679,17 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    gap: 16px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
 }
 
 .email-send:hover,
@@ -687,14 +697,6 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     background-color: #31d0aa;
 }
 
-.send-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-}
 
 .email-sub {
     display: flex;
@@ -705,7 +707,3 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     fill: white;
 }
 
-.p-svg {
-    display: flex;
-    gap: 16px;
-}
