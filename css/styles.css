@@ -447,8 +447,12 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     margin-right: 120px;
 }
 
-.social-media {
+/* .social-media {
     margin-right: 80px;
+} */
+
+.subscribe {
+    margin-left: auto;
 }
 
 .social-text {
@@ -493,6 +497,15 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .modal {
@@ -522,7 +535,9 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: transparent;
 }
+.modal-close:hover, .modal-close:focus {background-color: #404BBF; fill: white;}
 
 
 .modal-title {
@@ -551,7 +566,7 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
 .modal-input:focus {
     border-color: #4D5AE5;
 }
-
+/* .modal-input:focus + .form-icon {fill: #4D5AE5;} */
 .input-wrapper:focus-within .form-icon { fill: #4d5ae5;}
 
 .modal-label {
@@ -577,8 +592,11 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
 .modal-field {
     margin-bottom: 8px;
 }
-.modal-field:last-of-type{
+.space {
     margin-bottom: 16px;
+}
+.modal-field:last-of-type{
+    margin-bottom: 24px;
 }
 
 .text-area {
@@ -600,6 +618,35 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     color: rgba(46, 47, 66, 0.4);
 }
 .text-area:focus{border-color: #4d5ae5;}
+
+
+.modal-check:checked + .check-text .check-element {
+    background-color: #4d5ae5;
+    border: none;
+    fill: #fff;
+}
+
+.check-text {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: flex;
+    align-items: center;
+}
+
+.check-element {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
 
 
 /* *-------FOOTER FORM-------* */
