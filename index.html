@@ -517,21 +517,21 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
+        <div class="for-form">
           <p class="social-text">Subscribe</p>
           <form
             class="subscription_form"
             name="subscription_form"
             autocomplete="off"
           >
-            <label class="subscription-label"></label>
-            <input
-              class="email-field"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-
+            <label class="subscription-label" aria-label="footer email">
+              <input
+                class="email-field"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="email-send" type="submit">
               Subscribe
               <svg class="send-icon" width="24" height="24">
@@ -542,7 +542,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="modal-close-icon" width="8" height="8">
