@@ -595,11 +595,11 @@
             </div>
           </div>
           <div class="modal-field space">
-            <label class="modal-label" for="textarea-id">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="text-area"
-              name="feedback"
-              id="textarea-id"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -607,18 +607,18 @@
             <input
               class="modal-check visually-hidden"
               type="checkbox"
-              name="policy"
-              id="policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
             />
-            <label for="policy" class="check-text"
+            <label for="user-privacy" class="check-text"
               ><span class="check-element">
                 <svg width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
+              <a class="privacy-link" href="">Privacy Policy</a></label
             >
           </div>
           <button class="hero-button" type="submit">Send</button>
